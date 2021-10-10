@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-10-08T19:24:37 IST" name="Suite1" finished-at="2021-10-08T19:25:39 IST" duration-ms="62331">
+    <groups>
+    </groups>
+    <test started-at="2021-10-08T19:24:37 IST" name="Test1" finished-at="2021-10-08T19:25:39 IST" duration-ms="62331">
+      <class name="com.Amazon.TestCases.VerifyAmazonSearchTest2">
+        <test-method signature="verifyValidSearchTest2()[pri:0, instance:com.Amazon.TestCases.VerifyAmazonSearchTest2@13c10b87]" started-at="2021-10-08T19:24:37 IST" name="verifyValidSearchTest2" finished-at="2021-10-08T19:25:39 IST" duration-ms="62299" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyValidSearchTest2 -->
+      </class> <!-- com.Amazon.TestCases.VerifyAmazonSearchTest2 -->
+      <class name="com.Amazon.TestCases.VerifyAmazonSearchTest">
+        <test-method signature="verifyValidSearchTest()[pri:0, instance:com.Amazon.TestCases.VerifyAmazonSearchTest@43ee72e6]" started-at="2021-10-08T19:24:37 IST" name="verifyValidSearchTest" finished-at="2021-10-08T19:25:39 IST" duration-ms="61698" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyValidSearchTest -->
+      </class> <!-- com.Amazon.TestCases.VerifyAmazonSearchTest -->
+    </test> <!-- Test1 -->
+  </suite> <!-- Suite1 -->
+</testng-results>
