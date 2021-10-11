@@ -21,28 +21,27 @@ public class TestClass {
 		driver.get(targetURL);
 		driver.manage().window().maximize();
 		System.out.println("Launched url:'"+targetURL+"' successfully");
-		Objects pageObjects = new Objects();
-		WebElement mobileNavigation = fetchObject(pageObjects.mobileNav);
+		WebElement mobileNavigation = fetchObject(Objects.mobileNav);
 		mobileNavigation.click();
 		System.out.println("Clicked on 'Mobiles' link in top navigation.");
-		WebElement mobileNAccessories = fetchObject(pageObjects.mobileNAccessories);
+		WebElement mobileNAccessories = fetchObject(Objects.mobileNAccessories);
 		mobileNAccessories.click();
 		
 		System.out.println("Clicked on 'Mobiles & Accessories' link in submenu.");
 		
-		WebElement smartPhones = fetchObject(pageObjects.smartPhones);
+		WebElement smartPhones = fetchObject(Objects.smartPhones);
 		smartPhones.click();
 		System.out.println("Clicked on Smartphones & Basic Mobiles");
 		
-		WebElement selectPhone = fetchObject(pageObjects.selectPhone);
+		WebElement selectPhone = fetchObject(Objects.selectPhone);
 		selectPhone.click();
 		System.out.println("Select the first samsung phone");
 		
-		WebElement addToCart = fetchObject(pageObjects.addToCart);
+		WebElement addToCart = fetchObject(Objects.addToCart);
 		addToCart.click();
 		System.out.println("Click on Add to Cart button");
 		
-		WebElement goToCart = fetchObject(pageObjects.goToCart);
+		WebElement goToCart = fetchObject(Objects.goToCart);
 		goToCart.click();
 		System.out.println("Click on Cart button");
 		

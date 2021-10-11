@@ -3,7 +3,6 @@
  */
 package com.Amazon.Pages;
 
-
 import java.util.List;
 import java.util.Set;
 
@@ -11,14 +10,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-
-/**
- * @author Sam
- *
- *
- *This class will store all the locators and methods of Search Page
- */
-public class SearchPage {
+public class SearchPage extends TestBase {
 	
 	WebDriver driver;
 	
@@ -27,6 +19,7 @@ public class SearchPage {
 	By phoneLink = By.partialLinkText("Apple iPhone 13 Mini (256GB)");
 	By addToCartButton = By.cssSelector("input#add-to-cart-button");
 	By goToCart = By.cssSelector("span#nav-cart-count");
+	
 	
 	public SearchPage(WebDriver driver) {
 		this.driver = driver;
@@ -58,7 +51,9 @@ public class SearchPage {
 	
 	public void searchItem(String itemName) 
 	{
+		TestBase.waitForElementPrensence(driver, searchBox, 10);
 		driver.findElement(searchBox).sendKeys(itemName);
+		TestBase.waitForElementPrensence(driver, searchButton, 10);
 		driver.findElement(searchButton).click();
 	}
 	
@@ -66,6 +61,7 @@ public class SearchPage {
 		
 		
 		//clicking the link of the iPhone
+		TestBase.waitForElementPrensence(driver, phoneLink, 10);
 		
 		driver.findElement(phoneLink).click();
 		
@@ -92,11 +88,12 @@ public class SearchPage {
 		 
 		} 	
 		
-		
+		TestBase.waitForElementPrensence(driver,addToCartButton, 10);
 		
 		//Click on add to cart
 		driver.findElement(addToCartButton).click();
 		
+		TestBase.waitForElementPrensence(driver,goToCart, 10);
 		//navigate to cart
 		
 		driver.findElement(goToCart).click();
