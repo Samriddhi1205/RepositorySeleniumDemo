@@ -11,10 +11,6 @@ import java.util.Properties;
 
 import com.Amazon.TestCases.VerifyAmazonSearch;
 
-/**
- * @author sam
- *
- */
 public class PropertiesFile {
 	
 	public static Properties prop = new Properties();
